@@ -1,0 +1,43 @@
+<!--index.wxml-->
+<view class="container">
+
+<form bindsubmit="formSubmit" bindreset="formReset">
+  <view class="page-section">
+    <view class="page-section-title">AppName:</view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <view class="weui-cell__bd">
+          <input class="weui-input" bindinput="bindAppNameInput" data-key='appName' name="input" placeholder="AppName" />
+        </view>
+      </view>
+    </view>
+
+    <view class="page-section-title">Account:</view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <view class="weui-cell__bd">
+          <input class="weui-input" bindinput="bindAccountInput" data-key='account' name="input" placeholder="Account" />
+        </view>
+      </view>
+    </view>
+
+    <view class="page-section-title">Password:</view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <view class="weui-cell__bd">
+          <input class="weui-input" bindinput="bindPasswordInput" data-key='password' name="input" placeholder="Password" />
+        </view>
+      </view>
+    </view>
+
+  </view>
+
+  <view class="btn-area">
+    <button type="primary" formType="submit">Submit</button>
+    <button formType="reset">Reset</button>
+    <button bindtap='toList'>My Passwords</button>
+  </view>
+
+  </form>
+
+</view>

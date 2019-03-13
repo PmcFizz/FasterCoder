@@ -1,0 +1,17 @@
+<!--pages/chooseLib/chooseLib.wxml-->
+<view class="container">
+
+  <scroll-view class="list" scroll-y style='margin-bottom:160rpx;display:block;'>
+    <view class="list-item" wx:for="{{pwdList}}" wx:key="pwd">
+      <text class="black">AppName:{{item.appName}}</text>
+      <text class="black">Account:{{item.account}}</text>
+      <text class="black">Password:{{item.password}}</text>
+    </view>    
+  </scroll-view>
+  
+   <view class="btn-area" style="position:fixed;bottom:3rpx">
+    <button type="primary" bindtap="toCreate">Create One</button>
+  </view>
+
+</view>
+
