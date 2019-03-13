@@ -2,7 +2,12 @@
 
 @import "../../style/guide.wxss";
 
-.black {
+.block {
   color: black;
-  display: block
+  display: block;
+}
+.pwd_value{
+  color:red;
+  display:inline-block;
+  margin-left:20rpx;
 }

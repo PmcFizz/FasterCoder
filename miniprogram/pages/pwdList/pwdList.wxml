@@ -3,12 +3,15 @@
 
   <scroll-view class="list" scroll-y style='margin-bottom:160rpx;display:block;'>
     <view class="list-item" wx:for="{{pwdList}}" wx:key="pwd">
-      <text class="black">AppName:{{item.appName}}</text>
-      <text class="black">Account:{{item.account}}</text>
-      <text class="black">Password:{{item.password}}</text>
-    </view>    
+      <text class="block">AppName:<text class="pwd_value">{{item.appName}}</text></text>
+      <text class="block">Account:<text class="pwd_value">{{item.account}}</text></text>
+      <text class="block">Password:<text class="pwd_value">{{item.password}}</text></text>
+    <!-- <button type="primary" bindtap="toCreate" style="width:80px;height:60px">Create One</button>
+    <button type="primary" bindtap="toCreate" style="width:80px;height:60px">Create One</button>
+    <button type="primary" bindtap="toCreate" style="width:80px;height:60px">Create One</button> -->
+    </view>
   </scroll-view>
-  
+
    <view class="btn-area" style="position:fixed;bottom:3rpx">
     <button type="primary" bindtap="toCreate">Create One</button>
   </view>
